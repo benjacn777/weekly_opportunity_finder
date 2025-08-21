@@ -1,0 +1,47 @@
+email:
+  to: ""
+  from_name: "Weekly Opportunity Finder"
+
+roles: ["phd", "ra", "industry"]
+
+keywords:
+  - mri
+  - fmri
+  - functional
+  - neuroimaging
+  - neuroscience
+  - neuro
+  - ultra high field
+  - brain
+  - psychedelic
+  - drug
+  - eeg
+  - meg
+
+location:
+  include_uk_only: true
+  prefer_london: true
+
+limits:
+  per_site: 8
+  total: 25
+
+# add these:
+sources:
+  - findaphd
+  - jobs_ac_uk
+  - psychedelic_alpha
+  - nature_careers
+  - euraxess
+  - generic_sites   # points to the URLs below
+
+# generic site list (you can edit freely)
+generic_sites:
+  - "https://www.ucl.ac.uk/work-at-ucl/search-jobs"
+  - "https://www.kcl.ac.uk/hr/jobs"
+  - "https://www.imperial.ac.uk/jobs"
+  - "https://www.jobs.cam.ac.uk"
+  - "https://www.ox.ac.uk/about/jobs"
+  - "https://www.ukri.org/about-us/working-at-ukri/current-opportunities/"
+  - "https://wellcome.org/about-us/jobs"
+
