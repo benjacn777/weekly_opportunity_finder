@@ -1,1 +1,4 @@
 yagmail
+requests
+beautifulsoup4
+pyyaml
