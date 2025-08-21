@@ -2,8 +2,11 @@ name: weekly-opportunities
 
 on:
   schedule:
-    - cron: "0 8 * * 1"   # run every Monday at 08:00 UTC
-  workflow_dispatch: {}    # allows manual run from the UI
+    - cron: "0 8 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read   # least privilege
 
 jobs:
   run:
