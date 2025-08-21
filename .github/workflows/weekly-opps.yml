@@ -1,14 +1,13 @@
-name: weekly_opportunity_finder
+name: weekly-opportunities
 
 on:
   schedule:
-    - cron: "0 8 * * 1"   # run every Monday at 8am UTC
-  workflow_dispatch: {}    # allows manual run
+    - cron: "0 8 * * 1"   # run every Monday at 08:00 UTC
+  workflow_dispatch: {}    # allows manual run from the UI
 
 jobs:
   run:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -25,3 +24,4 @@ jobs:
           EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python main.py
+
